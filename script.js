@@ -32,9 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const sectionHeight = section.offsetHeight;
 
             if (scrollPosition >= sectionTop && scrollPosition < (sectionTop + sectionHeight)) {
-                // Pour le footer, on peut rattacher l'activation à la dernière section
                 if (section.tagName.toLowerCase() === 'footer') {
-                    currentSectionId = 'synthese'; // ou laisser vide
+                    currentSectionId = ''; // footer n'est pas lié à une section de navigation
                 } else {
                     currentSectionId = section.getAttribute('id');
                 }

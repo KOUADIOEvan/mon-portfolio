@@ -1,6 +1,3 @@
-/* ==========================================================================
-   STRUCTURE GLOBALE & REINITIALISATION
-   ========================================================================== */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -8,14 +5,14 @@
 }
 
 :root {
-    --primary-color: #2b3e50;    /* Bleu ardoise professionnel */
-    --accent-color: #3498db;     /* Bleu accent pour les liens/actions */
-    --accent-slam: #2ecc71;      /* Vert discret pour SLAM */
-    --text-dark: #333333;        /* Texte général */
-    --text-light: #ffffff;       /* Texte clair */
-    --bg-light: #f8f9fa;         /* Fond clair alternatif */
-    --bg-white: #ffffff;         /* Fond de page blanc */
-    --border-color: #e2e8f0;     /* Bordures des tableaux et cards */
+    --primary-color: #2b3e50;
+    --accent-color: #3498db;
+    --accent-slam: #2ecc71;
+    --text-dark: #333333;
+    --text-light: #ffffff;
+    --bg-light: #f8f9fa;
+    --bg-white: #ffffff;
+    --border-color: #e2e8f0;
     --transition-fast: 0.3s ease;
 }
 
@@ -72,7 +69,6 @@ body {
     margin: -20px auto 40px auto;
     color: #666;
 }
-
 .text-center {
     text-align: center;
 }
@@ -80,8 +76,6 @@ body {
 .mt-4 {
     margin-top: 1.5rem;
 }
-
-/* Buttons */
 .btn-primary {
     display: inline-block;
     background-color: var(--accent-color);
@@ -144,9 +138,6 @@ body {
     text-decoration: underline;
 }
 
-/* ==========================================================================
-   NAVIGATION / HEADER
-   ========================================================================== */
 header {
     background-color: var(--primary-color);
     position: fixed;
@@ -207,9 +198,6 @@ header nav ul li a.active {
     display: none;
 }
 
-/* ==========================================================================
-   SECTION ACCUEIL / HERO
-   ========================================================================== */
 .hero-section {
     background: linear-gradient(135deg, #1e2b38 0%, #2b3e50 100%);
     color: var(--text-light);
@@ -284,9 +272,6 @@ header nav ul li a.active {
     color: #94a3b8;
 }
 
-/* ==========================================================================
-   PROFIL DE L'ETUDIANT
-   ========================================================================== */
 .profil-grid {
     display: flex;
     gap: 50px;
@@ -368,9 +353,6 @@ header nav ul li a.active {
     letter-spacing: 0.5px;
 }
 
-/* ==========================================================================
-   COMPETENCES DEVELOPPEES
-   ========================================================================== */
 .skills-wrapper {
     display: flex;
     gap: 30px;
@@ -428,9 +410,6 @@ header nav ul li a.active {
     font-size: 1rem;
 }
 
-/* ==========================================================================
-   PROJETS REALISES
-   ========================================================================== */
 .projects-grid {
     display: flex;
     gap: 30px;
@@ -520,9 +499,6 @@ header nav ul li a.active {
     font-weight: 500;
 }
 
-/* ==========================================================================
-   EXPERIENCES PROFESSIONNELLES (TIMELINE)
-   ========================================================================== */
 .timeline {
     position: relative;
     max-width: 800px;
@@ -598,10 +574,6 @@ header nav ul li a.active {
     font-size: 0.95rem;
     color: #4a5568;
 }
-
-/* ==========================================================================
-   VEILLE TECHNOLOGIQUE
-   ========================================================================== */
 .veille-grid {
     display: flex;
     gap: 40px;
@@ -673,9 +645,6 @@ header nav ul li a.active {
     margin-bottom: 0;
 }
 
-/* ==========================================================================
-   TABLEAU DE SYNTHESE
-   ========================================================================== */
 .table-responsive {
     width: 100%;
     overflow-x: auto;
@@ -751,9 +720,6 @@ header nav ul li a.active {
     margin-right: 6px;
 }
 
-/* ==========================================================================
-   CONCLUSION & FOOTER
-   ========================================================================== */
 .footer-section {
     background-color: #1e2b38;
     color: var(--text-light);
@@ -794,9 +760,6 @@ header nav ul li a.active {
     color: #94a3b8;
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN (MEDIA QUERIES)
-   ========================================================================== */
 @media (max-width: 992px) {
     .profil-grid, .skills-wrapper, .projects-grid, .veille-grid {
         flex-direction: column;

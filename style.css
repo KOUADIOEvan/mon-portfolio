@@ -636,6 +636,7 @@ header nav ul li a.active {
     border-radius: 4px;
     font-size: 0.9rem;
     font-weight: 500;
+    text-decoration: none;
 }
 
 .themes-list {
